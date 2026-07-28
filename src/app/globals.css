@@ -21,7 +21,17 @@
 }
 
 body {
-  /* background: var(--background); */
-  /* color: var(--foreground); */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 45%, #fdf2f8 100%);
+  color: #0f172a;
   font-family: var(--font-geist-sans), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.3);
+  color: #111827;
 }
