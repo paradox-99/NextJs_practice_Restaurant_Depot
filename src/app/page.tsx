@@ -36,7 +36,7 @@ export default function Home() {
               href="/food"
               className="rounded-full bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-700"
             >
-              Explore Food
+              Explore Foods
             </Link>
             <Link
               href="/reviews"

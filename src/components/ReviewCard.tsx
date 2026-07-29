@@ -79,8 +79,8 @@ const ReviewCard = ({ review }: ReviewCardProps) => {
                   </p>
 
                   <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-gray-100 pt-4">
-                        <div className="flex items-center gap-2 text-sm text-gray-500">
-                              <span className="inline-flex h-9 items-center rounded-full bg-gray-100 px-4 font-medium text-gray-700">
+                        <div className="flex items-center justify-between gap-2 text-sm text-gray-500">
+                              <span className="inline-flex h-9 items-center rounded-full bg-gray-100 px-4 font-medium text-gray-700 w-22 text-center">
                                     {review.likes.length} likes
                               </span>
                               {review.likes.length > 0 ? (

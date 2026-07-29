@@ -17,7 +17,7 @@ const Header = () => {
 
       const paths: Path[] = [
             { name: "Home", href: "/" },
-            { name: "Food", href: "/food" },
+            { name: "Foods", href: "/food" },
             { name: "Reviews", href: "/reviews" }
       ];
 
@@ -25,7 +25,7 @@ const Header = () => {
             <div className=" p-4 flex justify-between items-center w-full shadow-md bg-white">
                   <div className="flex items-center">
                         <Image src="/logo.png" alt="Logo" width={80} height={80} className='ml-10' />
-                        <h1 className="text-2xl font-bold text-gray-800 inline-block ml-4">Restaurant Depot</h1>
+                        <h1 className="text-2xl font-bold text-gray-800 inline-block ml-2">Restaurant Depot</h1>
                   </div>
                   <nav>
                         <ul className="flex space-x-4">

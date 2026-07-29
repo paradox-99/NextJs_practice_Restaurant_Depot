@@ -37,6 +37,23 @@ const extractUrl = (value: string): string => {
       return value;
 };
 
+export async function generateMetadata({ params }: FoodDetailsProps) {
+      const { id } = await params;
+      const food = await getFoodDetails(id);
+
+      if (!food) {
+            return {
+                  title: "Food Not Found",
+                  description: "The requested food item could not be found.",
+            };
+      }
+
+      return {
+            title: `${food.title} | Food Details`,
+            description: `Explore the details of ${food.title}, including its category, area, price, and more.`,
+      };
+}    
+
 export default async function FoodDetails({ params }: FoodDetailsProps) {
       const { id } = await params;
       const food = await getFoodDetails(id);

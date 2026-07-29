@@ -2,6 +2,11 @@ import Cards from "@/components/Cards";
 import CardItems from "./CardItems";
 import InputSearchField from "@/components/InputSearchField";
 
+export const metadata = {
+  title: "Foods",
+  description: "Explore our delicious menu and learn more about our culinary offerings.",
+};
+
 interface Food {
       id: number;
       title: string;

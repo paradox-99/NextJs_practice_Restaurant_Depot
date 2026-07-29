@@ -1,5 +1,12 @@
 import ReviewCard from "@/components/ReviewCard";
 
+export const metadata = {
+  title: {
+      absolute: "Reviews",
+  },
+  description: "Read honest reviews that help you choose your next great meal.",
+};
+
 type Review = {
       id: number;
       user: string;
